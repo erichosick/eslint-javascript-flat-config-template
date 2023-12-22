@@ -11,9 +11,12 @@
   "author": "Eric Hosick <erichosick@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.10.5",
     "eslint": "^8.56.0",
     "eslint-plugin-jsonc": "^2.11.2",
-    "only-allow": "^1.2.1"
+    "only-allow": "^1.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "npm": "Use pnpm instead of npm."
