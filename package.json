@@ -4,12 +4,15 @@
   "description": "A project that demonstrates how to set up ESLint to lint javascript and node files using flat config files.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "eslint": "ESLINT_USE_FLAT_CONFIG=true npx eslint --config eslint.config.mjs ."
   },
   "keywords": [],
   "author": "Eric Hosick <erichosick@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-jsonc": "^2.11.2",
     "only-allow": "^1.2.1"
   },
   "engines": {
