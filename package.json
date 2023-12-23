@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm",
-    "eslint": "ESLINT_USE_FLAT_CONFIG=true npx eslint --config eslint.config.mjs ."
+    "eslint": "ESLINT_USE_FLAT_CONFIG=true npx eslint --config eslint.config.mjs .",
+    "eslint:watch": "nodemon --exec 'ESLINT_USE_FLAT_CONFIG=true npx eslint --config eslint.config.mjs .' --config .config/nodemon.config.json"
   },
   "keywords": [],
   "author": "Eric Hosick <erichosick@gmail.com>",
@@ -14,6 +15,7 @@
     "@types/node": "^20.10.5",
     "eslint": "^8.56.0",
     "eslint-plugin-jsonc": "^2.11.2",
+    "nodemon": "^3.0.2",
     "only-allow": "^1.2.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
